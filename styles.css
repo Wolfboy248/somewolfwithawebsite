@@ -1,29 +1,21 @@
-.Wolfhud-div {
-    width: 400px;
-    height: 500px;
-    background-color: rgba(50, 50, 50, 200);
-    /* filter: blur(2px); */
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 10px;
-    border-color: white;
-    transform: translate(50%, 50%);
-    display: block;
-    user-select: none;
-    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+body, html {
+    margin: 0px;
+    height: 100%;
+    background-color: black;
 }
 
-.Wolfhud-div:hover {
-    transform: translate(50%, 48%);
+.wolfhud-div {
+    background-color: rgb(43, 43, 43);
+    width: 300px;
+    height: 300px;
 }
 
-.Wolfhud-div-title {
-    font-size: 70px;
-    font-family: product-bold;
-    display: block;
-    transform: translate(16%, 50%);
-    color: rgba(255, 255, 255, 200);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 100);
+h1 {
+    font-family: montserrat;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
 }
 
 a {
