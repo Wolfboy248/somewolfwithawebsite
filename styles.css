@@ -1,0 +1,51 @@
+.Wolfhud-div {
+    width: 400px;
+    height: 500px;
+    background-color: rgba(50, 50, 50, 200);
+    /* filter: blur(2px); */
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    transform: translate(50%, 50%);
+    display: block;
+    user-select: none;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Wolfhud-div:hover {
+    transform: translate(50%, 48%);
+}
+
+.Wolfhud-div-title {
+    font-size: 70px;
+    font-family: product-bold;
+    display: block;
+    transform: translate(16%, 50%);
+    color: rgba(255, 255, 255, 200);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 100);
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: product;
+    src: url(content/fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: product-bold;
+    src: url(content/fonts/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+    font-family: product-italic;
+    src: url(content/fonts/Product\ Sans\ Italic.ttf);
+}
+
+@font-face {
+    font-family: product-bold-italic;
+    src: url(content/fonts/Product\ Sans\ Bold\ Italic.ttf);
+}
