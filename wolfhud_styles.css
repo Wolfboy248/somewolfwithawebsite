@@ -165,6 +165,11 @@ h1 {
     transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     font-family: product-bold;
     letter-spacing: 0.5px;
+    animation-name: download_btn_intro;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .wolfhud-download-btn:hover {
@@ -172,6 +177,7 @@ h1 {
     top: 145px;
     text-shadow: 0 0 2px #ffffff01, 0 0 10px #ffffff;
     letter-spacing: 1.5px;
+    border-width: 5px;
 }
 
 @keyframes intro {
@@ -213,6 +219,12 @@ h1 {
     0% {
         transform: translate(-50%, -40%);
         opacity: 0;
+    }
+}
+
+@keyframes download_btn_intro {
+    0% {
+        left: -200px;
     }
 }
 
