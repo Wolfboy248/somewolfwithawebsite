@@ -124,7 +124,7 @@ h1 {
 }
 
 .img1 {
-    width: 800px;
+    width: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 100%;
@@ -137,7 +137,7 @@ h1 {
 }
 
 .img2 {
-    width: 800px;
+    width: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 165%;
@@ -147,6 +147,31 @@ h1 {
     animation-duration: 0.5s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: backwards;
+}
+
+.wolfhud-download-btn {
+    background-color: rgba(100, 100, 100, 0.5);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    top: 150px;
+    left: 220px;
+    position: absolute;
+    border-radius: 15px;
+    border-bottom: 2px solid white;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-family: product-bold;
+    letter-spacing: 0.5px;
+}
+
+.wolfhud-download-btn:hover {
+    background-color: rgba(100, 100, 100, 0.6);
+    top: 145px;
+    text-shadow: 0 0 2px #ffffff01, 0 0 10px #ffffff;
+    letter-spacing: 1.5px;
 }
 
 @keyframes intro {
@@ -189,4 +214,24 @@ h1 {
         transform: translate(-50%, -40%);
         opacity: 0;
     }
+}
+
+@font-face {
+    font-family: product;
+    src: url(content/fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: product-bold;
+    src: url(content/fonts/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+    font-family: product-italic;
+    src: url(content/fonts/Product\ Sans\ Italic.ttf);
+}
+
+@font-face {
+    font-family: product-bold-italic;
+    src: url(content/fonts/Product\ Sans\ Bold\ Italic.ttf);
 }
