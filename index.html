@@ -12,11 +12,26 @@
 </head>
     <body>
 
-        <div class="bg" id="bg"></div>
+        <div id="background" class="bg"></div>
 
-        <a href="wolfhud.html"><div class="wolfhud-div" id="wh-div">
-            <div class="wh-bg"></div>
+        <h2>Pick one</h2>
+
+        <a href="wolfhud.html"><div class="wolfhud-div" id="whDiv">
             <h1>WolfHud</h1>
         </div></a>
     </body>
+
+    <script>
+        const background = document.querySelector("#background");
+        const whDiv = document.querySelector("#whDiv");
+
+        whDiv.addEventListener('mouseover', () => {
+            background.style.opacity = "80%";
+        })
+
+        whDiv.addEventListener('mouseout', () => {
+            background.style.opacity = "0%";
+        })
+    </script>
+
 </html>

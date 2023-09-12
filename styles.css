@@ -4,6 +4,24 @@ body, html {
     background-color: black;
 }
 
+h2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 50%;
+    font-family: product-bold;
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    animation-name: h2_intro;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0.1s;
+    animation-fill-mode: backwards;
+    user-select: none;
+}
+
 .wh-bg {
     background-image: url(content/images/swiftwater-small.png);
     height: 450px;
@@ -16,7 +34,7 @@ body, html {
 }
 
 .wolfhud-div {
-    background-color: rgb(43, 43, 43);
+    background-image: url(content/images/swiftwater-small.png);
     width: 450px;
     height: 450px;
     transform: translate(-50%, -50%);
@@ -30,6 +48,9 @@ body, html {
     border-bottom-color: gray;
     border-bottom-width: 8px;
     border-bottom-style: solid;
+    border-right-color: gray;
+    border-right-width: 8px;
+    border-right-style: solid;
     transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -43,7 +64,8 @@ body, html {
     background-position: center;
     background-size: cover;
     filter: blur(5px);
-    opacity: 80%;
+    opacity: 0%;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .wolfhud-div:hover {
@@ -55,15 +77,6 @@ body, html {
     left: 302px;
 }
 
-.wolfhud-div:hover .background {
-    background-image: url(content/images/badwater.jpg);
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    filter: blur(5px);
-    opacity: 80%;
-}
-
 h1 {
     font-family: montserrat;
     color: white;
@@ -71,12 +84,18 @@ h1 {
     font-size: 80px;
     user-select: none;
     position: relative;
-    transform: translateY(-350%);
+    transform: translateY(120%);
     text-shadow: 3px 3px black;
 }
 
 a {
     text-decoration: none;
+}
+
+@keyframes h2_intro {
+    0% {
+        top: -50%;
+    }
 }
 
 @font-face {
