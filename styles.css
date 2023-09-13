@@ -77,6 +77,8 @@ h2 {
     transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-name: wh_div_intro;
     animation-duration: 0.5s;
+    animation-delay: 0.05s;
+    animation-fill-mode: backwards;
 }
 
 .bg {
