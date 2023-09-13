@@ -78,14 +78,14 @@ h2 {
 }
 
 h1 {
-    font-family: montserrat;
+    font-family: product-bold;
     color: white;
     text-align: center;
     font-size: 80px;
     user-select: none;
     position: relative;
     transform: translateY(120%);
-    text-shadow: 3px 3px black;
+    text-shadow: 4px 4px black;
 }
 
 a {

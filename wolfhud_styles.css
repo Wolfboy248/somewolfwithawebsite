@@ -2,7 +2,6 @@ body, html {
     height: 100%;
     margin: 0px;
     background-color: rgb(0, 0, 0);
-    margin-bottom: 3400px;
 }
 
 .bg {
@@ -113,7 +112,7 @@ a {
 }
 
 h1 {
-    font-family: montserrat;
+    font-family: product-bold;
     font-size: 60px;
     animation-name: intro;
     animation-duration: 0.5s;
@@ -142,9 +141,9 @@ h1 {
     transform: translate(-50%, -50%);
     top: 0px;
     left: 35%;
-    font-family: montserrat;
+    font-family: product;
     color: white;
-    font-size: 35px;
+    font-size: 2rem;
     animation-name: info_text_intro;
     animation-duration: 0.2s;
     animation-delay: 0.3s;
@@ -312,6 +311,67 @@ h1 {
 @keyframes download_btn_intro {
     0% {
         left: -200px;
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    .info-text {
+        font-size: 1.9rem;
+    }
+
+    .wolfhud-download-btn {
+        top: 270px;
+        left: 150px;
+    }
+
+    .wolfhud-download-btn:hover {
+        top: 260px;
+    }
+
+    .img1 {
+        width: 95%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 800px;
+    }
+
+    .img2 {
+        width: 95%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 1100px;
+    }
+
+    .img3 {
+        width: 95%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 1400px;
+    }
+
+    .img4 {
+        width: 95%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 1700px;
+    }
+
+    .img5 {
+        width: 95%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 2000px;
+    }
+
+    .img6 {
+        width: 95%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 2300px;
+    }
+
+    .bg5 {
+        height: 0%;
     }
 }
 
