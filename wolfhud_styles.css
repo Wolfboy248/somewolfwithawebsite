@@ -261,7 +261,7 @@ h1 {
 .wolfhud-download-btn:hover {
     background-color: rgba(100, 100, 100, 0.6);
     top: 145px;
-    text-shadow: 0 0 2px #ffffff01, 0 0 10px #ffffff;
+    text-shadow: 0 0 2px #ffffff01;
     letter-spacing: 1.5px;
     border-width: 5px;
 }

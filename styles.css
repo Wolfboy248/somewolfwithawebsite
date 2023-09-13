@@ -52,10 +52,31 @@ h2 {
     border-right-width: 8px;
     border-right-style: solid;
     transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-name: wh_div_intro;
+    animation-duration: 0.5s;
 }
 
-#wh-div:hover #bg  {
-    opacity: 0;
+.portal-div {
+    background-image: url(content/images/smooth_jazz-small.png);
+    width: 450px;
+    height: 450px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: white;
+    border-bottom-color: gray;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-right-color: gray;
+    border-right-width: 8px;
+    border-right-style: solid;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-name: wh_div_intro;
+    animation-duration: 0.5s;
 }
 
 .bg {
@@ -77,6 +98,15 @@ h2 {
     left: 302px;
 }
 
+.portal-div:hover {
+    top: 48%;
+}
+
+.portal-div:active {
+    top: 49%;
+    left: 51%;
+}
+
 h1 {
     font-family: product-bold;
     color: white;
@@ -84,7 +114,7 @@ h1 {
     font-size: 5rem;
     user-select: none;
     position: relative;
-    transform: translateY(120%);
+    transform: translateY(100%);
     text-shadow: 4px 4px black;
 }
 
@@ -100,14 +130,37 @@ a {
         top: -1%;
     }
 
+    h1 {
+        transform: translateY(-65%);
+    }
+
     .wolfhud-div {
         width: 80%;
         left: 50%;
-        height: 50%;
-        top: 55%;
+        height: 10%;
+        top: 35%;
+    }
+
+    .wolfhud-div:hover {
+        top: 34%;
     }
 
     .wolfhud-div:active {
+        left: 50%;
+    }
+
+    .portal-div {
+        width: 80%;
+        left: 50%;
+        height: 10%;
+        top: 50%;
+    }
+
+    .portal-div:hover {
+        top: 49%;
+    }
+
+    .portal-div:active {
         left: 50%;
     }
 
@@ -119,6 +172,16 @@ a {
 @keyframes h2_intro {
     0% {
         top: -50%;
+    }
+}
+
+@keyframes wh_div_intro {
+    0% {
+        top: 60%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
     }
 }
 
