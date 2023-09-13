@@ -141,6 +141,8 @@ a {
         left: 50%;
         height: 10%;
         top: 35%;
+        animation-name: wh_div_mobile_intro;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .wolfhud-div:hover {
@@ -156,6 +158,8 @@ a {
         left: 50%;
         height: 10%;
         top: 50%;
+        animation-name: wh_div_mobile_intro;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .portal-div:hover {
@@ -184,6 +188,12 @@ a {
     }
     50% {
         opacity: 0;
+    }
+}
+
+@keyframes wh_div_mobile_intro {
+    0% {
+        left: -50%;
     }
 }
 
