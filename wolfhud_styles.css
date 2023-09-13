@@ -317,15 +317,16 @@ h1 {
 @media screen and (max-width: 80rem) {
     .info-text {
         font-size: 1.9rem;
+        top: 2rem;
     }
 
     .wolfhud-download-btn {
-        top: 270px;
+        top: 20rem;
         left: 150px;
     }
 
     .wolfhud-download-btn:hover {
-        top: 260px;
+        top: 19.5rem;
     }
 
     .img1 {
