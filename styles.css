@@ -81,7 +81,7 @@ h1 {
     font-family: product-bold;
     color: white;
     text-align: center;
-    font-size: 80px;
+    font-size: 5rem;
     user-select: none;
     position: relative;
     transform: translateY(120%);
@@ -103,10 +103,16 @@ a {
     .wolfhud-div {
         width: 80%;
         left: 50%;
+        height: 50%;
+        top: 55%;
     }
 
     .wolfhud-div:active {
         left: 50%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
     }
 }
 

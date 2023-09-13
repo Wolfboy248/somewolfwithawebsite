@@ -113,7 +113,7 @@ a {
 
 h1 {
     font-family: product-bold;
-    font-size: 60px;
+    font-size: 3.7rem;
     animation-name: intro;
     animation-duration: 0.5s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -317,16 +317,24 @@ h1 {
 @media screen and (max-width: 80rem) {
     .info-text {
         font-size: 1.9rem;
-        top: 2rem;
+        top: 5.5rem;
     }
 
     .wolfhud-download-btn {
-        top: 20rem;
-        left: 150px;
+        top: 24rem;
+        left: 50%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .header-back-image {
+        top: 68px;
     }
 
     .wolfhud-download-btn:hover {
-        top: 19.5rem;
+        top: 23.5rem;
     }
 
     .img1 {
